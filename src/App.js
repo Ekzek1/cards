@@ -1,23 +1,26 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import CardsImage from './components/organism/CardsImage';
+import DefaultCards from './components/organism/DefaultCards';
 
 function App() {
+
+  
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="wrapper">
+      <CardsImage
+        src='https://avatars.mds.yandex.net/i?id=d749495a12b48ba3df55ae709500f6d5-4339445-images-thumbs&n=13&exp=1'
+        alt='dogs'
+        title='Card title'
+        discription = 'Lorem ipsum dolor sit amet, consectetur adipiscing eli'
+        button = 'Go somewhere'
+      />
+      <DefaultCards 
+        title='Card title'
+        discription = 'Lorem ipsum dolor sit amet, consectetur adipiscing eli'
+        button = 'Go somewhere'
+      />
     </div>
   );
 }
